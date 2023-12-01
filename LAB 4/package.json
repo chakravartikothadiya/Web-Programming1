@@ -1,0 +1,15 @@
+{
+  "name": "cs-546-lab-4",
+  "version": "1.0.0",
+  "description": "This is lab assignment 4 ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Chakravarti Kothadiya  CWID: 20012229",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.10.0"
+  }
+}

@@ -1,0 +1,77 @@
+/*This file should have CSS rulesets */
+
+p{
+    color: brown;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size:3rem;
+}
+
+h2{
+    color: blue;
+}
+
+main{
+    max-width: 75%;
+	margin: auto;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+body {
+	background: #e1f85f;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+a.NameList {
+    font-size: 1.5rem;
+}
+
+.AnotherSearch{
+    font-size: 1.75rem;
+    text-align: center;
+    color: deeppink;
+    font-family: serif;
+    font-style: oblique;
+}
+
+.LabelText{
+    font-size: 20px;
+}
+
+dt, dd {
+    font-size: 1.5rem;
+}
+
+dt{
+    color:chocolate;
+    font-weight: bold;
+}
+dd{
+    color:rgb(89, 19, 139);
+}
+
+.dynamic{
+    background: #4eeefc;
+}
+
+.not-found{
+    color: darkred;
+    font-weight: bold;
+} 
+
+.Error{
+    color: darkred;
+    font-weight: bold;
+}

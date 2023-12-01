@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <br>
+    <div class="container">
+        <form action="" method="dialog">
+        <input type="text" placeholder="address" id="address" name="address">
+        <br>
+        <button onclick="findAddress()">Search</button>
+        <input type="text" placeholder="results" id="results">
+    </div>
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script type="text/javascript">
+        let autocomplete;
+        $(document).ready(function(){
+            
+            let id = 'address';
+
+            autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)),{
+                types:['geocode'],
+            })
+        });
+
+        function findAddress(){
+            console.log("here");
+            let place = autocomplete.getPlace();
+            let lat=place.geometry.location.lat();
+            let lon=place.geometry.location.lng();
+            let location = {lat:lat,lng:lon};
+            addMarker(location);
+            //jQuery("#results").val(place.geometry.location.lat());
+        }
+
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcRs0sa21dO5jEBhHPoOq0sUClaWHwung&callback=initMap&v=weekly&libraries=places"
+      defer
+    ></script>
+</body>
+</html>

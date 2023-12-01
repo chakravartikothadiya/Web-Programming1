@@ -1,0 +1,11 @@
+{
+  "name": "cs-546-lab-2",
+  "version": "1.0.0",
+  "description": "This is 2nd lab assignment",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "author": "Chakravarti Kothadiya 20012229",
+  "license": "MIT"
+}

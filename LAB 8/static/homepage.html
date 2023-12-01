@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Finder</title>
+    <link rel="stylesheet" href="/public/main-styles.css">
+</head>
+<body>
+    <main>
+        <h1>People Finder</h1>
+        <p>Through this website we can get all the people's data using a form. We can also search people who have a certain substring in either their first name or their last name. Additionally we can also get the details of a person by his/her ID</p>
+        <br>
+        <form action="/searchpeople" method="POST" class="search-form">
+            <label for="searchPerson" class="LabelText">Search Person Name</label>
+            <input id="searchPerson" class="LabelText" name="searchPersonName" type="text"><br><br>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

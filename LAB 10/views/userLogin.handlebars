@@ -1,0 +1,19 @@
+<main>
+    <form id="login-form" method="post" action="/login">
+        <label for="usernameInput">
+            Username:
+            <input type="text" name="usernameInput" id="usernameInput" >
+        </label>
+        <label for="passwordInput">
+            Password:
+            <input type="password" name="passwordInput" id="passwordInput">
+        </label>
+        <button id="submit">Login</button>
+        <br>
+        {{#if error}}
+        <p>Error:{{error}}</p>
+        {{/if}}
+        <br>
+        <a href="/register">Click here to register!</a>
+    </form>
+</main>

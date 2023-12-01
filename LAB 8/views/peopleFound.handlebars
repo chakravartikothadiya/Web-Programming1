@@ -1,0 +1,10 @@
+
+<h2>Search Result for: {{searchquerry}}</h2>   
+<main>
+        {{#each result}}
+        <ul>
+            <li><a class="NameList" href="/persondetails/{{id}}">{{firstName}} {{lastName}}</a></li>
+        </ul>
+        {{/each}}
+        <a class="AnotherSearch" href="/">Make another search</a>
+</main>

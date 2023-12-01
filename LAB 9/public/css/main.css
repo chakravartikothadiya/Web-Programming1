@@ -1,0 +1,72 @@
+/*
+You will style your page using at least 10 CSS selectors for general CSS styling. You will place the CSS in its own file. You must style the is-green class to make text have a color of #00E676 and is-red class to make text have a color of #FF3D00.
+*/
+
+
+h1{
+    color: blue;
+}
+
+.back {
+    background-color: rgb(252, 231, 149);
+}
+
+label,input{
+    font-size:30px;
+}
+
+li{
+    font-size: 25px;
+}
+
+footer{
+    font-weight: 900;
+    font-style: italic;
+    align-self: center;
+    align-items: center;
+    background-color: coral;
+    border: #FF3D00;
+    color: white;
+}
+
+div{
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.is-green {
+    color: #00E676;
+}
+
+.is-red {
+    color: #FF3D00;
+}
+
+.is-valid {
+    background-color: #7ce6b3;
+    color: #00E676;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.not-valid {
+    background-color: #e67c7c;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    color: #e60000;
+}
+
